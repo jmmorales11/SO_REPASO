@@ -345,6 +345,65 @@
   </div>
 </div>
 
+
+  <!-- Preguntas 44 a 49 -->
+  <div id="pregunta44">
+    <h2>44. La carpeta donde se aloja las configuraciones del sistema?</h2>
+    <input type="text" id="respuesta44" placeholder="Ingrese su respuesta">
+    <button onclick="comprobarRespuesta(44)">Comprobar</button>
+    <p class="respuesta" id="resultado44"></p>
+  </div>
+
+  <div id="pregunta45">
+    <h2>45. A donde se van los archivos que se usan para los dispositivos de entrada como impresora, CD, teclado?</h2>
+    <input type="text" id="respuesta45" placeholder="Ingrese su respuesta">
+    <button onclick="comprobarRespuesta(45)">Comprobar</button>
+    <p class="respuesta" id="resultado45"></p>
+  </div>
+
+  <div id="pregunta46">
+    <h2>46. ¿Comando para renombrar una carpeta?</h2>
+    <input type="text" id="respuesta46" placeholder="Ingrese su respuesta">
+    <button onclick="comprobarRespuesta(46)">Comprobar</button>
+    <p class="respuesta" id="resultado46"></p>
+  </div>
+
+  <div id="pregunta47">
+    <h2>47. Escribir las abreviaturas del chequeo del hardware que funcione correctamente, que realice el sistema operativo Linux durante el arranque en la BIOS?</h2>
+    <input type="text" id="respuesta47" placeholder="Ingrese su respuesta">
+    <button onclick="comprobarRespuesta(47)">Comprobar</button>
+    <p class="respuesta" id="resultado47"></p>
+  </div>
+
+  <div id="pregunta48">
+    <h2>48. Cual es el comando para mostrar el número de líneas?</h2>
+    <input type="text" id="respuesta48" placeholder="Ingrese su respuesta">
+    <button onclick="comprobarRespuesta(48)">Comprobar</button>
+    <p class="respuesta" id="resultado48"></p>
+  </div>
+
+  <div id="pregunta49">
+    <h2>49. Cual es el comando para mostrar el número de palabras?</h2>
+    <input type="text" id="respuesta49" placeholder="Ingrese su respuesta">
+    <button onclick="comprobarRespuesta(49)">Comprobar</button>
+    <p class="respuesta" id="resultado49"></p>
+  </div>
+
+  <div id="pregunta50">
+    <h2>50. Con que comando veo la versión del kernel?</h2>
+    <input type="text" id="respuesta50" placeholder="Ingrese su respuesta">
+    <button onclick="comprobarRespuesta(50)">Comprobar</button>
+    <p class="respuesta" id="resultado50"></p>
+  </div>
+
+  <div id="pregunta51">
+    <h2>51. Con que comando veo la información básica del SO?</h2>
+    <input type="text" id="respuesta51" placeholder="Ingrese su respuesta">
+    <button onclick="comprobarRespuesta(51)">Comprobar</button>
+    <p class="respuesta" id="resultado51"></p>
+  </div>
+</div>
+
 <script>
   function comprobarRespuesta(numeroPregunta) {
     let respuestaUsuario = document.getElementById('respuesta' + numeroPregunta).value.trim().toLowerCase();
@@ -736,6 +795,78 @@
         } else {
         resultado.textContent = "Respuesta incorrecta. La respuesta correcta es Secure Socket Layer.";
         resultado.className = "respuesta incorrecto";
+        }
+        break;
+        case 44:
+        if (respuestaUsuario === "etc") {
+          resultado.textContent = "¡Respuesta correcta!";
+          resultado.className = "respuesta correcto";
+        } else {
+          resultado.textContent = "Respuesta incorrecta. La respuesta correcta es \\etc.";
+          resultado.className = "respuesta incorrecto";
+        }
+        break;
+      case 45:
+        if (respuestaUsuario === "dev") {
+          resultado.textContent = "¡Respuesta correcta!";
+          resultado.className = "respuesta correcto";
+        } else {
+          resultado.textContent = "Respuesta incorrecta. La respuesta correcta es \\dev.";
+          resultado.className = "respuesta incorrecto";
+        }
+        break;
+      case 46:
+        if (respuestaUsuario === "mv") {
+          resultado.textContent = "¡Respuesta correcta!";
+          resultado.className = "respuesta correcto";
+        } else {
+          resultado.textContent = "Respuesta incorrecta. La respuesta correcta es mv.";
+          resultado.className = "respuesta incorrecto";
+        }
+        break;
+      case 47:
+        if (respuestaUsuario === "post") {
+          resultado.textContent = "¡Respuesta correcta!";
+          resultado.className = "respuesta correcto";
+        } else {
+          resultado.textContent = "Respuesta incorrecta. La respuesta correcta es POST.";
+          resultado.className = "respuesta incorrecto";
+        }
+        break;
+      case 48:
+        if (respuestaUsuario === "wc -l") {
+          resultado.textContent = "¡Respuesta correcta!";
+          resultado.className = "respuesta correcto";
+        } else {
+          resultado.textContent = "Respuesta incorrecta. La respuesta correcta es wc -l.";
+          resultado.className = "respuesta incorrecto";
+        }
+        break;
+      case 49:
+        if (respuestaUsuario === "wc -w") {
+          resultado.textContent = "¡Respuesta correcta!";
+          resultado.className = "respuesta correcto";
+        } else {
+          resultado.textContent = "Respuesta incorrecta. La respuesta correcta es wc -w.";
+          resultado.className = "respuesta incorrecto";
+        }
+        break;
+        case 50:
+        if (respuestaUsuario === "uname -r") {
+          resultado.textContent = "¡Respuesta correcta!";
+          resultado.className = "respuesta correcto";
+        } else {
+          resultado.textContent = "Respuesta incorrecta. La respuesta correcta es uname -r.";
+          resultado.className = "respuesta incorrecto";
+        }
+        break;
+      case 51:
+        if (respuestaUsuario === "uname -a") {
+          resultado.textContent = "¡Respuesta correcta!";
+          resultado.className = "respuesta correcto";
+        } else {
+          resultado.textContent = "Respuesta incorrecta. La respuesta correcta es uname -a.";
+          resultado.className = "respuesta incorrecto";
         }
         break;
       // Añadir los casos para las demás preguntas aquí
